@@ -19,7 +19,8 @@ public class Car {
           _car = SingletonHelper._car;
           System.out.println("New Car instance created.");
       } else {
-          System.out.println("You already have a Car instance.");
+          // System.out.println("You already have a Car instance.");
+          throw new java.lang.Error("You already have a Car instance.");
       }
       return _car;
   }
